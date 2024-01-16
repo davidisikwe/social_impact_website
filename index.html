@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BB-MMA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="icon" href="Images/Screenshot_2023-10-02_223922-removebg-preview.png">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+
+
+
+  <!-- the content here will only show in the tab and in the metadata about the page -->
+
+
+
+
+</head>
+
+<body>
+
+  <!-- Part 1: Navbar Starter Code -->
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#home-nav">Home</a></li>
+      <li><a href="#about-nav">About</a></li>
+      <li><a href="#petition">Services</a></li>
+      <li><a href="#contact-nav">Contact</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+      <!-- Stretch Challenge: Drop Down -->
+    </ul>
+  </div>
+
+  <!--- Headings --->
+  <div class="header-container" id="home-nav">
+    <div class="header-item">
+      <h1>Bully Buster MMA </h1>
+      <h3>Championing Mental Health and Self-Defense</h3>
+    </div>
+    <div class="header-button">
+      <button type="button">Get Help</button>
+      &nbsp
+      <button type="button">Become an Upstander</button>
+    </div>
+    <div id="header-img">
+      <img src="Images/Screenshot_2023-10-02_223922-removebg-preview.png" alt="Website Header Image" />
+    </div>
+    <!------------------------------------------------------------------------------------>
+
+
+
+
+
+    <!-- Part 2: Flexbox Layout Stater Code -->
+
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <!--<script src="script.js"></script>-->
+  </div>
+
+  <!--- About --->
+
+  <div class="container revealable" id="about-nav">
+
+    <h2>Mental Health Care and fight against bullying</h2> <!-- About My Topic--->
+    <p>Join us in the fight against poor mental health and bullying.</p>
+    <p>Poor mental health is a challenge faced by MMA fighters globally, and the intense scrutiny they experience only
+      compounds their struggle for improvement.</p>
+    <p>This website is dedicated to raising awareness about the mental well-being of MMA fighters, addressing the
+      broader mental health concerns affecting teenagers, and actively contributing to the prevention of bullying among
+      adolescents.</p>
+
+  </div>
+  <!--- Data --->
+
+  <div id="content-flex">
+    <div class="container revealable">
+      <div class="row">
+        <div class="side-one">
+          <h2>Fighters Mental Health </h2>
+          <img src="Images/Screenshot 2023-10-01 162234.png" width="300px" height="300x"
+            alt="Paddy Pimblett Post fight interview at Fight-Night 208" />
+          <h4>Paddy Pimblett encouraging men to speak up on their Mental Health</h4>
+          <p>Another MMA fighter who has been open about their mental health is Israel Adesanya, he onced confirmed that
+            he started Mixed martial arts becasue he was being bullied as a teenager. Other fighters who have talked
+            about their struggles with mental health are: Max Holloway, Georges St-Pierre and Nick diaz </p>
+        </div>
+
+        <div class="side-two">
+          <!--- Impact --->
+          <h2>Impact of bullying on teenagers</h2>
+
+          <img src="Images/Screenshot 2023-10-01 174307.png" width="350px" height="300x"
+            alt="Prevalence of suicidal behaviour according to bullying" />
+          <h4>Where can this problem have lasting effects?</h4>
+          <p>Bullying can have devastating consequences on teenagers, often causing emotional distress, social
+            isolation, and low self-esteem. In some tragic cases, the relentless torment and feelings of hopelessness
+            resulting from bullying can contribute to the risk of suicidal thoughts and actions among vulnerable
+            adolescents. </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="self-defense-videos" class="revealable">
+    <h3>Fight Against Bullying</h3>
+    <!-- <video src="https://youtu.be/fvnZ8qeR6oo?si=qyCAA75PovwzU9ko"  width="640" height="360" type="video/mp4" controls > --->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fvnZ8qeR6oo?si=RCGwn7c25vB9d6cQ"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+    </video>
+  </div>
+  <div class="petition revealable" id="petition">
+
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container">
+
+
+      <div class="petition-para">
+        <p>We, the undersigned, unite in our commitment to creating a safe and supportive environment for teenagers
+          everywhere.<br> Bullying is a pervasive issue that harms the mental health of our youth. By signing this
+          petition, you stand with us in our <br>mission to raise awareness, provide resources, and foster a world where
+          every teenager can thrive without fear.<br> Let's combat bullying and champion the mental well-being of our
+          future generations together. <br>Sign now and be a part of positive change."</p>
+      </div>
+
+      <div class="signatures">
+        <p>🖊️ Tamu from Vermillion supports this.</p>
+        <p>🖊️ Joshua from South Africa supports this.</p>
+        <p>🖊️ Ky from United Kingdom supports this.</p>
+        <p id="counter">3 people have signed this petition and support this cause. </p>
+      </div>
+
+    </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <!-- inputs go here -->
+      <label for="Name">Name:</label> <input type="text" id="nameInput"></input>
+      <label for="Hometown">Hometown:</label><input type="text" id="hometownInput"></input>
+      <label for="Email">Email:</label><input type="text" id="emailInput"></input>
+
+    </form>
+
+    <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+
+  </div>
+
+  <div id="news-section">
+    <h3>News</h3>
+    <a class="news-section" href="https://www.ufc.com/news/ufc-athletes-speak-mental-health-read">
+      <article>
+        <h3>UFC Fighters speak up on mental health</h3>
+        <p>There is no such thing as being to tough to speak up</p>
+      </article>
+    </a>
+
+    <a class="news-section"
+      href="https://fightfast.com/FB/safe/safe.php?dmc_url=https%3A%2F%2Ffightfast.com%2FFB%2Fsafe%2Fsafe.php&utm_source=Bing&utm_campaign=518979962&utm_adgroup=1321615268643464&utm_ad=82601179302062&msclkid=435d3d926de6185ec869588baa3ab799">
+      <article>
+        <h3>Protect Yourself!!</h3>
+        <p>There is no such thing as being to tough to speak up</p>
+      </article>
+    </a>
+  </div>
+
+  <div class="footer" id="contact-nav">
+    <h3>Contact Me</h3>
+    <p>Phone: +1 (605) 659 3295</p>
+    <a href="mailto: disikwe@gmail.com">Email</a>
+    <a href="www.linkedin.com/in/david-isikwe-a47439231">LinkedIn</a>
+  </div>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+ 
+
+  <!-------------- Modal --------------------->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <!-- text here -->
+        <p id="thanks-modal-content">Championing Mental Health</p>
+        <!-- button here (stretch feature) -->
+      </div>
+      <!-- image here-->
+      <img id="modal-image" src="Images/51edfeafbd48a76e975f497ac79645f4--georges-st-pierre-ufc-combate.jpg">
+    </div>
+
+  </div>
+
+   <script src="index.js"></script>
+</body>
+
+</html>
